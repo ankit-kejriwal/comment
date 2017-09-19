@@ -1,0 +1,128 @@
+body{
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+
+.div-comments{
+    border:1px solid #aeaeae;
+    border-radius: 10px;
+    width:50%;
+    overflow: hidden;
+}
+
+.div-comments .header{
+    display: flex;
+    padding: 5px 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+section{
+    padding: 35px;
+}
+
+.div-comments .header .text{
+    padding-left:15px;
+    line-height: 25px;
+}
+
+.div-comments .comment{
+    display: flex;
+    border-bottom:1px solid #eaeaea;
+    padding: 4px;
+}
+.div-comments form{
+    margin-bottom: 0px;
+}
+
+
+.divAlign{
+    text-align: center;
+}
+
+.div-comments .comment-form{
+    display: flex;
+    padding: 6px;
+    border-bottom:1px solid #eaeaea;
+}
+
+.comment-form .left-side{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+}
+
+.comment-form .left-side .row{
+    flex: 0 auto;
+    display: flex;
+    align-content: center;
+}
+
+.comment-form .left-side .row input{
+    height: 32px;
+    width: 50%;
+}
+
+.comment-form .left-side .row textarea{
+    height: 42px;
+    margin-top:8px;
+}
+
+.comment-form .right-side{
+    flex:1;
+    display: flex;
+    justify-content: center;
+}
+
+.comment-form .right-side button{
+    white-space: pre-wrap;
+}
+
+.comment-form textarea{
+    width:100%;
+}
+
+.button-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.div-comments .user-icon{
+    flex: 0 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.div-comments .user-icon img{
+    height:45px;
+}
+
+.div-comments .comment-info{
+    flex:5;
+}
+
+.div-comments .comment-info .row{
+    display: flex;
+}
+
+.div-comments .comment-info .name{
+    color: #000;
+}
+
+.div-comments .comment-info .email{
+    color: #aeaeae;
+    margin-left: 10px;
+}
+
+.div-comments .comment-info .text{
+    padding-top:6px;
+    font-size: 13px;
+}
+
+.div-comments .comment{
+  animation: animationFrames ease 1s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode:forwards;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Commenting Widget</title>
+        <link rel="stylesheet" href="css/app.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+          <section>
+           <div class="div-comments ">
+                <div class="header">
+                    <div class="text">Comments</div>
+                </div>
+                <form class="pure-form" id="comment-form">
+                    <div class="comment-form">
+                      <div class="left-side">
+                           <div class="row">
+                               <input type="text" required placeholder="enter your name" id="new_comment_name">
+                               <input placeholder="enter valid email" required type="email" id="new_comment_email">
+                            </div>
+                            <div class="row">
+                                <textarea placeholder="enter comment text" required id="new_comment_text" rows="3"></textarea>
+                            </div>
+                      </div>
+                     <div class="right-side">
+                            <button type="submit" class="button-secondary pure-button">Send Comment</button>
+                     </div>
+                 </div>
+                </form>
+                 <div class="comments-list" id="comments-list">
+                    <!-- Here we will display live comments -->
+                    <script id="comment-template" type="text/x-template">
+                        <div class="comment-info">
+                            <div class="row">
+                                  <div class="name">{{name}}</div>
+                                  <div class="email">{{email}}</div>
+                             </div>
+                             <div class="row">
+                                   <div class="text">{{comment}}</div>
+                             </div>
+                         </div>
+                    </script>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
